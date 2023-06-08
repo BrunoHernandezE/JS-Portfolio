@@ -1,0 +1,9 @@
+.nav-bar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.bruno-home {
+  font-size: 2.5rem;
+  text-decoration: none;
+}
