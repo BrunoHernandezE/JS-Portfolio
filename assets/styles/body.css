@@ -2,11 +2,12 @@
   --font: 'Montserrat', sans-serif;
   --text-primary-color: #333333;
   --text-secondary-color: #ffffff;
-  --primary-color-box: #333333;
   --secondary-color-box: #d6d6d6;
+  --dark-gray: #222;
+  
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
-
   font-family: var(--font);
+  color: var(--text-primary-color);
 }

@@ -6,134 +6,116 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bruno Hernández Echeverría</title>
+  <!-- Libraries CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Styles -->
   <link rel="stylesheet" href="./assets/styles/body.css">
   <link rel="stylesheet" href="./assets/styles/navbar.css">
+  <link rel="stylesheet" href="./assets/styles/header.css">
+  <link rel="stylesheet" href="./assets/styles/about-me.css">
+  <link rel="stylesheet" href="./assets/styles/footer.css">
+  <!-- Icons -->
   <script src="https://kit.fontawesome.com/a6c2f0428b.js" crossorigin="anonymous"></script>
+  <!-- CDN Graphs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-network.min.css" integrity="sha512-NJXM8vzWgDcBy9SCUTJXYnNO43sZV3pfLWWZMFTuCtEUIOcznk+AMpH6N3XruxavYfMeMmjrzDMEQ6psRh/6Hw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-network.min.js" integrity="sha512-GE9mKnPrTn2DY5AZuIC9yE6K4FF8T+9lsO7jwHn+RW9rEjnHzF/in0oGwlPzRwjhQ+oJiawmtfvleX+l6h5/cA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+  <!-- JavaScript -->
   <script src="./app/main.js" defer></script>
+  <script src="./app/skills-graph.js" defer></script>
 </head>
 
 <body>
   <nav class="nav-bar">
-    <a href="#" class="bruno-home">Bruno</a>
-    <div class="menu"><i class="fa-solid fa-bars"></i></div>
+    <div class="navBar-container">
+      <!-- animate__animated animate__hinge ↓ -->
+      <a href="#" class="bruno-home">Bruno</a>
+      <div class="menu"><i class="fa-solid fa-bars fa-2x"></i></div>
+    </div>
   </nav>
   <header class="header">
     <div class="header-text-container">
-      <h2 class="header-hello">Hola, yo soy</h2>
-      <h1 class="header-name">Bruno Hernández</h1>
+      <h2 class="header-hello"> Hola,</h2>
+      <h1 class="header-name">Soy Bruno</h1>
+      
       <p class="header-presentation">Soy un desarrollador web con experiencia en la creación de sitios web dinámicos y
         responsivos utilizando HTML, CSS y JavaScript.</p>
     </div>
     <div class="contact-links">
-      <div class="logo-link twitter"><a href="https://twitter.com/BrunoHE_2001/with_replies" target="_blank"><i
-            class="fa-brands fa-twitter"></i></a></div>
-      <div class="logo-link github"><a href="https://github.com/BrunoHernandezE" target="_blank"><i
-            class="fa-brands fa-github"></i></a></div>
-      <div class="logo-link linkedin"><a href="https://www.linkedin.com/in/bruno-hern%C3%A1ndez/" target="_blank"><i
+      <div class="logo-link twitter"><a href="https://twitter.com/BrunoHE_2001/with_replies" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="logo-link github"><a href="https://github.com/BrunoHernandezE"
+          target="_blank"><i class="fa-brands fa-github"></i></a></div>
+      <div class="logo-link linkedin"><a
+          href="https://www.linkedin.com/in/bruno-hern%C3%A1ndez/" target="_blank"><i
             class="fa-brands fa-linkedin"></i></a></div>
     </div>
   </header>
-  <main class="aboutMe">
-    <section class="aboutMe-goals">
-      <h2>Objetivos Profesionales</h2>
-      <p>Mi objetivo es continuar aprendiendo y ampliar mis habilidades en el desarrollo web. Quiero mantenerme
-        actualizado en las últimas tendencias y tecnologías, y crecer profesionalmente en este campo.
-        Quiero enfrentar desafíos interesantes y aprender de proyectos emocionantes. Estoy motivado para ser un experto
-        en el desarrollo web y contribuir en la creación de sitios web geniales y de calidad.
-        Estoy abierto a aprender nuevas tecnologías y trabajar en equipos colaborativos donde podamos compartir
-        conocimientos y crecer juntos.</p>
-    </section>
-    <section class="aboutMe-services">
-      <h2>Servicios</h2>
-      <div class="servives-container">
-        <div class="service">
-          <span>Diseño UI/UX de sitios web</span>
+  <main class="about-me">
+    <div class="about-me-container">
+      <section class="about-me-goals">
+        <h2 class="about-me-title">Objetivos Profesionales</h2>
+        <p class="goals-description">Mi objetivo es continuar aprendiendo y ampliar mis habilidades en el desarrollo
+          web. Quiero mantenerme
+          actualizado en las últimas tendencias y tecnologías, y crecer profesionalmente en este campo.
+          Quiero enfrentar desafíos interesantes y aprender de proyectos emocionantes.
+          Estoy abierto a aprender nuevas tecnologías y trabajar en equipos colaborativos donde podamos compartir
+          conocimientos y crecer juntos.</p>
+      </section>
+      <section class="about-me-services">
+        <h2 class="about-me-title">Servicios</h2>
+        <div class="services-container">
+          <div class="service">
+            <img class="service-icon" src="./assets/img/services/responsive-design.svg" alt="Responsive Webs Development">
+            <h3 class="service-name">Desarrollo de sitios web responsivos estaticos y dinamicos</h3>
+          </div>
+          <div class="service">
+            <img class="service-icon" src="./assets/img/services/landing-page.svg" alt="Landing Pages Development">
+            <h3 class="service-name">Desarrollo de Landing Pages</h3>
+          </div>
+          <div class="service">
+            <img class="service-icon" src="./assets/img/services/api.svg" alt="Api Development">
+            <h3 class="service-name">Desarrollo e integracion de APIs</h3>
+          </div>
+          <div class="service">
+            <img class="service-icon" src="./assets/img/services/design.svg" alt="Web Design">
+            <h3 class="service-name">Diseño UI/UX de sitios web</h3>
+          </div>
         </div>
-        <div class="service">
-          <span>Desarrollo de sitios web responsivos estaticos y dinamicos </span>
+      </section>
+      <section class="about-me-skills">
+        <h2 class="about-me-title">Skills</h2>
+        <div id="skills-graph"></div>
+      </section>
+      <section class="about-me-proyects">
+        <h2 class="proyects-title about-me-title">Proyectos</h2>
+        <div class="proyects-container">
+          <div class="proyect-card">
+            <img class="proyect-image" src="./assets/img/proyects/Real-Estate-Web.png" alt="Real Estate Web">
+            <h3 class="proyect-title">Web de Viviendas</h3>
+            <span class="proyect-description">Web para mostrar casas y departamentos</span>
+            <div class="proyect-techs-used">
+              <img class="tech" src="./assets/img/skills/react.svg" alt="React" title="React">
+              <img class="tech" src="./assets/img/skills/tailwind.svg" alt="Tailwind" title="Tailwind">
+              <img class="tech" src="./assets/img/services/responsive-design.svg" alt="Responsive Design" title="Responsive">
+            </div>
+          </div>
+
         </div>
-        <div class="service">
-          <span>Desarrollo de Landing Pages</span>
+      </section>
+
+      <section class="about-me-contact ">
+        <h2 class="about-me-title">Contacto</h2>
+        <div class="contact-data">
+          <a href="mailto: brunohernandez1298@gmail.com" class="contact-email">brunohernandez1298@gmail.com</a> <br>
+          <span class="contact-phone">+52 55 7296 6196</span>
         </div>
-        <div class="service">
-          <span>Desarrollo e integracion de APIs</span>
-        </div>
-      </div>
-    </section>
-    <section class="aboutMe-skills">
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <div class="skill">
-          <i class="fa-brands fa-html5"></i>
-          <span>HTML</span>
-        </div>
-        <div class="skill">
-          <i class="fa-brands fa-css3"></i>
-          <span>CSS</span>
-        </div>
-        <div class="skill">
-          <i class="fa-brands fa-js"></i>
-          <span>JavaScript</span>
-        </div>
-        <div class="skill">
-          <i class="fa-brands fa-react"></i>
-          <span>React</span>
-        </div>
-        <div class="skill">
-          <i class="fa-brands fa-vuejs"></i>
-          <span>Vue</span>
-        </div>
-        <div class="skill">
-          <i class="fa-solid fa-database"></i>
-          <span>MongoDB</span>
-        </div>
-        <div class="skill">
-          <span>Express</span>
-        </div>
-        <div class="skill">
-          <i class="fa-brands fa-github"></i>
-          <span>Git & Github</span>
-        </div>
-        <div class="skill">
-          <i class="fa-brands fa-figma"></i>
-          <span>Figma</span>
-        </div>
-      </div>
-    </section>
-    <section class="aboutMe-proyects">
-      <h2>Proyectos</h2>
-      <div class="proyect-card">
-        <!-- <img src="" alt=""> -->
-        <h3>Proyect Title</h3>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vitae.</span>
-      </div>
-    </section>
-    <section class="aboutMe-courses">
-      <h2>Cursos y Certificaciones</h2>
-      <div class="courses-certs-container">
-        <div class="course">
-          <!-- <img src="" alt=""> -->
-          <h3 class="course-title">Oracle One</h3>
-          <span class="course-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, odit?</span>
-        </div>
-        <div class="cert">
-          <!-- <img src="" alt=""> -->
-          <h3 class="cert-title">Azure Fundamentals</h3>
-          <span class="cert-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, illum.</span>
-        </div>
-      </div>
-    </section>
-    <section class="aboutMe-contact">
-      <h2>Contacto</h2>
-      <div class="contact-data">
-        <span class="contact-email">Email: <span class="email">brunohernandez1298@gmail.com</span></span> <br>
-        <span class="contact-phone">Telefono: <span class="phone">+52 55 7296 6196</span></span>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <span class="credits">Developed by <a href="#" class="credits-name">Bruno Hernandez</a></span>
   </footer>
 </body>
-
 </html>
+
+

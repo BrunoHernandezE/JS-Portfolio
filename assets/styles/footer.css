@@ -1,0 +1,14 @@
+.footer {
+  text-align: center;
+}
+.credits {
+  color: var(--text-primary-color);
+  font-size: 1rem;
+}
+.credits a {
+  color: var(--dark-gray);
+  text-decoration: none;
+}
+.credits a:hover {
+  font-weight: 600;
+}

@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-text-container {
+  width: 80%;
+}
+.header-hello {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.header-hello::before {
+  content: "──";
+}
+.header-presentation {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  text-align: left;
+}
+.contact-links {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  width: 50%;
+}
+.logo-link a{
+  color: var(--text-primary-color);
+  font-size: 2rem;
+}
