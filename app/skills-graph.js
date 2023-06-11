@@ -1,4 +1,4 @@
-const imgRoute = "/assets/img/skills/"
+const imgRoute = "../assets/img/skills/"
 let nodos = [
   { id: 1, label: "Html", shape: "image", image: `${imgRoute}html.svg`, url: "https://developer.mozilla.org/es/docs/Web/HTML" },
   { id: 2, label: "Css", shape: "image", image: `${imgRoute}css.svg`, url: "https://developer.mozilla.org/es/docs/Web/CSS" },
